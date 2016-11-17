@@ -11,7 +11,7 @@ BUILD_BASE	= build
 FW_BASE = firmware
 
 #ESPTOOL = tools/esptool/esptool.py
-ESPTOOL = /home/oak/xtensa-lx106-elf/bin/esptool.py
+ESPTOOL = /home/oak/esp8266_tools/xtensa-lx106-elf/bin/esptool.py
 
 # name for the target project
 TARGET		= app
