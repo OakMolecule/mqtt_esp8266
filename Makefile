@@ -11,7 +11,7 @@ BUILD_BASE	= build
 FW_BASE = firmware
 
 #ESPTOOL = tools/esptool/esptool.py
-ESPTOOL = $HOME/esp8266_tools/xtensa-lx106-elf/bin/esptool.py
+ESPTOOL = /home/oak/esp8266_tools/xtensa-lx106-elf/bin/esptool.py
 
 # name for the target project
 TARGET		= app
@@ -67,7 +67,7 @@ else
 	# Can we use -fdata-sections?
 	ESPPORT ?= /dev/ttyUSB0
 #	SDK_BASE	?= /esptools/esp_iot_sdk_v1.3.0#
-	SDK_BASE = $HOME/esp8266_tools/esp_iot_sdk/
+	SDK_BASE = /home/oak/esp8266_tools/esp_iot_sdk/
 	CCFLAGS += -Os -ffunction-sections -fno-jump-tables
 	AR = xtensa-lx106-elf-ar
 	CC = xtensa-lx106-elf-gcc
